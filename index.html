@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  <!--Refrence for CSS file-->
+    <title>E-commerce website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>  <!--Refrence for Java script file-->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="logo"><h1>Anime store</h1></div>  <!--Name of E-commerce store-->
+            <section class="search-section">   
+            <div class="search">
+                <button id="search-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                  </path>        
+                  </svg>
+                </button>   
+            </div>
+            </section>
+        </div>
+        <!--Navigation Bar-->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#section2">Notebooks</a></li>
+                <li><a href="#section3">Action Figures</a></li>
+                <li><a href="#section4">Key Chains</a></li>
+                <li><a href="#section5">Jewellery</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+                <li><a href="cart.html">Shopping Bag</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN BODY-->
+
+    <h4 style="color: #6f063e; text-align: center;">ANIME FANS BEWARE !! You may end up buying everything.</h4>
+    
+    <!--Best sellers Section-->
+    <section class="product-section" id="section1">
+
+        <h2>Our Best Sellers!</h2> 
+
+        <div class="products"> 
+
+            <div class="product">
+                <img src="images/keychain 1.png">
+                <a href="#section4"><h3>Shuriken & Kunai Keychain</a></h3> <!--Refer to the section the product belongs to-->
+            </div>
+
+            <div class="product">
+                <img src="images/notebook 3.png">
+                <a href="#section2"><h3>Demon Slayer Notebook</a></h3>
+            </div>  
+
+            <div class="product">
+                <div class="gallery-container">
+                    <div class="gallery">
+                      <img src="images/rings 1.png" class="gallery-image">
+                      <img src="images/rings 2.png" class="gallery-image">
+                    </div>
+                    <div class="gallery-nav">
+                      <button class="prev" onclick="prevImage(1)">&#10094;</button>
+                      <button class="next" onclick="nextImage(1)">&#10095;</button>
+                    </div>
+                  </div>
+                <a href="#section5"><h3>Akatsuki Rings</a></h3>
+            </div>
+
+            <div class="product">
+                <img src="images/necklace.png">
+                <a href="#section5"><h3>Goku Necklace</a></h3>
+            </div>
+
+            <div class="product">
+                <img src="images/keychain 4.png">
+                <a href="#section4"><h3>Gojo Keychain</a></h3>
+            </div>
+
+            <div class="product">
+                <img src="images/action figure 1.png">
+                <a href="#section3"><h3>Naruto Action Figure</a></h3>
+            </div>
+
+            <div class="product">
+                <img src="images/keychain 3.png">
+                <a href="#section4"><h3>Spy x Family Keychains</a></h3>
+            </div>
+
+            <div class="product">
+                <img src="images/notebook 1.2.png">
+                <a href="#section2"><h3>Naruto Notebook</a></h3>
+            </div>
+
+        </div>
+    </section>
+    <!--Notebooks Section-->
+    <section class="product-section" id="section2">
+
+        <h2>Notebooks</h2>
+        <p>Whether you're taking notes in class, working on an assignment, or simply jotting down your thoughts, 
+            these Anime writing notebook is the perfect companion for any student who loves these series.</p>
+
+        <div class="products">
+            <!--Data Recorded for use in Java Script-->
+            <div class="product" data-id="1" data-name="Naruto Notebooks" data-price="699" data-image="images/notebook 1.1.png"> 
+                <!--Gallery Section to show multiple images of a product-->
+                <div class="gallery-container">
+                <div class="gallery">
+                  <img src="images/notebook 1.1.png" class="gallery-image">
+                  <img src="images/notebook 1.2.png" class="gallery-image">
+                </div>
+                <!--Navigation butons to swipe Left or Right-->
+                <div class="gallery-nav">
+                  <button class="prev" onclick="prevImage(2)">&#10094;</button>
+                  <button class="next" onclick="nextImage(2)">&#10095;</button>
+                </div>
+              </div>
+              <!--Product Details-->
+                <h3>Naruto Notebooks</h3>
+                <h4>Price: 699 PKR / notebook</h4>
+                <p>Size: A5<br>Pages: 50<br>Spiral Binding</p>
+                <!--Add to cart Button-->
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="2" data-name="Dragon Ball Z Notebook" data-price="699" data-image="images/notebook 2.png">
+                <img src="images/notebook 2.png" alt="Notebook">
+                <h3>Dragon Ball Z Notebook</h3>
+                <h4>Price: 699 PKR</h4>
+                <p>Size: A5<br>Pages: 50<br>Spiral Binding</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="3" data-name="Demon Slayer Notebook" data-price="699" data-image="images/notebook 3.png">
+                <img src="images/notebook 3.png" alt="Notebook">
+                <h3>Demon Slayer Notebook</h3>
+                <h4>Price: 699 PKR</h4>
+                <p>Size: A5<br>Pages: 50<br>Spiral Binding</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="4" data-name="Attack on Titan Notebook" data-price="699" data-image="images/notebook 4.1.png">
+                <div class="gallery-container">
+                    <div class="gallery">
+                      <img src="images/notebook 4.1.png" class="gallery-image">
+                      <img src="images/notebook 4.2.png" class="gallery-image">
+                    </div>
+                    <div class="gallery-nav">
+                      <button class="prev" onclick="prevImage(3)">&#10094;</button>
+                      <button class="next" onclick="nextImage(3)">&#10095;</button>
+                    </div>
+                  </div>
+                <h3>Attack on Titan Notebooks</h3>
+                <h4>Price: 699 PKR / notebook</h4>
+                <p>Size: A5<br>Pages: 50<br>Spiral Binding</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Action Figures Section-->
+    <section class="product-section" id="section3">
+
+        <h2>Action Figures</h2>
+        <p>Get ready to go on an adventure with our PVC Action figures! 
+           Each figure features a highly detailed design that brings your favorite Anime characters to life. 
+           With their signature poses and colorful outfits, these figures are perfect for displaying on your desk or bookshelf.</p>
+        
+           <div class="products">
+            <div class="product" data-id="5" data-name="One Piece Set" data-price="1699" data-image="images/figure set 1.png">
+                <img src="images/figure set 1.png">
+                <h3>One Piece Brothers Set</h3>
+                <h4>Price: 1699 PKR</h4>
+                <p>3 Characters: Luffy, Ace, Sabo<br>Size: 9cm<br>Material: PVC</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="6" data-name="Naruto Action Figure" data-price="1399" data-image="images/action figure 1.png">
+                <img src="images/action figure 1.png">
+                <h3>Naruto Sage</h3>
+                <h4>Price: 1399 PKR</h4>
+                <p>Size: 9cm<br>Material: PVC</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div> 
+
+            <div class="product" data-id="7" data-name="Kakashi Action Figure" data-price="1399" data-image="images/action figure 2.png">
+                <img src="images/action figure 2.png">
+                <h3>Kakashi War</h3>
+                <h4>Price: 1399 PKR</h4>
+                <p>Size: 9cm<br>Material: PVC</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div> 
+
+            <div class="product" data-id="8" data-name="Demon Slayer Set" data-price="2499" data-image="images/figure set 2.png">
+                <img src="images/figure set 2.png">
+                <h3>Demon Slayer Set</h3>
+                <h4>Price: 2499 PKR</h4>
+                <p>6 Characters Set<br>Size: 9cm<br>Material: PVC</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Key chains Section-->
+    <section class="product-section" id="section4">
+
+        <h2>Key Chains</h2>
+        <p>With a sleek and stylish design, these keychains are the perfect way to personalize your keys, backpack, or even phone case.
+            Each keychain features a high-quality print of your favorite characters from the iconic anime series.</p>
+        
+            <div class="products">
+            <div class="product" data-id="9" data-name="Gojo Keychain" data-price="699" data-image="images/keychain 4.png">
+                <img src="images/keychain 4.png" alt="Product 7">
+                <h3>Gojo Key chain</h3>
+                <h4>Price: 999 PKR</h4>
+                <p>Material: Acrylic<br>Size: 5cm</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="10" data-name="Shuriken & Kunai Keychain" data-price="999" data-image="images/keychain 1.png">
+                <img src="images/keychain 1.png">
+                <h3>Shuriken & Kunai</h3>
+                <h4>Price: 999 PKR</h4>
+                <p>Stainless Steel Keychain<br>Secure Key-ring</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="11" data-name="Tokyo Revengers Keychain" data-price="699" data-image="images/keychain 2.1.png">
+                <div class="gallery-container">
+                    <div class="gallery">
+                      <img src="images/keychain 2.1.png" class="gallery-image">
+                      <img src="images/keychain 2.2.png" class="gallery-image">
+                    </div>
+                    <div class="gallery-nav">
+                      <button class="prev" onclick="prevImage(4)">&#10094;</button>
+                      <button class="next" onclick="nextImage(4)">&#10095;</button>
+                    </div>
+                  </div>
+                <h3>Tokyo Revengers Set</h3>
+                <h4>Price: 699 PKR / item</h4>
+                <p>Material: Acrylic<br>Size: 4cm</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div> 
+
+            <div class="product" data-id="12" data-name="Spy x Family keychains" data-price="999" data-image="images/keychain 3.png">
+                <img src="images/keychain 3.png" alt="Product 7">
+                <h3>Spy x Family Key Chains</h3>
+                <h4>Price: 999 PKR</h4>
+                <p>3 Characters: The Forgers<br>Material: Acrylic</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Jewellery Section-->
+    <section class="product-section" id="section5">
+
+        <h2>Jewellery</h2>
+        <p>Crafted from high-quality materials, these jewelleries are perfect for cosplay, collection, or everyday wear.</p>
+        
+        <div class="products"> 
+            <div class="product" data-id="13" data-name="Akatsuki Rings" data-price="1999" data-image="images/rings 1.png">                <div class="gallery-container">
+                    <div class="gallery">
+                      <img src="images/rings 1.png" class="gallery-image">
+                      <img src="images/rings 2.png" class="gallery-image">
+                    </div>
+                    <div class="gallery-nav">
+                      <button class="prev" onclick="prevImage(5)">&#10094;</button>
+                      <button class="next" onclick="nextImage(5)">&#10095;</button>
+                    </div>
+                  </div>
+                <h3>Akatsuki Rings</h3>
+                <h4>Price: 1999 PKR</h4>
+                <p>Set of 10 Rings<br>Material: Stainless Steel<br>Size: Adjustable</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="14" data-name="Goku Necklace" data-price="999" data-image="images/necklace.png">
+                <img src="images/necklace.png">
+                <h3>Goku Necklace</h3>
+                <h4>Price: 999 PKR</h4>
+                <p>Metal Type: Titanium<br>Pendant Size: 2.8*2*5cm</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="15" data-name="H x H Earrings" data-price="1399" data-image="images/earrings 1.1.png">
+                <div class="gallery-container">
+                    <div class="gallery">
+                      <img src="images/earrings 1.1.png" class="gallery-image">
+                      <img src="images/earrings 1.2.png" class="gallery-image">
+                    </div>
+                    <div class="gallery-nav">
+                      <button class="prev" onclick="prevImage(6)">&#10094;</button>
+                      <button class="next" onclick="nextImage(6)">&#10095;</button>
+                    </div>
+                  </div>
+                <h3>Hunter x Hunter Earrings</h3>
+                <h4>Price: 1399 PKR</h4>
+                <p>2 Earrings Set: Gon and Killua<br>Material: Acrylic<br></p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+
+            <div class="product" data-id="16" data-name="Yor's Earrings" data-price="999" data-image="images/earrings 2.png">
+                <img src="images/earrings 2.png">
+                <h3>Yor Forger Earrings</h3>
+                <h4>Price: 999 PKR</h4>
+                <p>Material: Alloy<br>Size: 5cm</p>
+                <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+            </div>
+        </div>
+    </section>
+
+    <!--Cart button at the bottom of screen-->
+    <button><a href="cart.html" class="fixed-cart-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+          </svg>
+          <span class="cart-counter">0</span>
+    </a></button>
+ 
+    <!--FOOTER-->
+    <footer>
+      <div class="footer">
+          <ul>
+           <div id="footer">
+            <p>✓ Premium-Quality Products</p>
+            <p>✓ 100% Customer Satisfaction</p>
+            <p>✓ Fast delivery</p>
+            <br>
+            <p><b>Refund policy</b></p>
+            <p>In case of damaged products, we offer a 3-day Money-back guarantee.</p>
+            <br>
+            <p><b>Contact Number:</b> 051-89768788</p>
+            <p><b>Email:</b> info@animestorepk.com</p>
+            </div>
+           <br>
+              <p>&copy; 2024 Ayesha Zainab</p>
+            </ul>
+         </div>
+     </footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart-style.css"> <!--Refrence for Cart page Stylesheet-->
+    <title>Shopping bag</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>   <!--Refrence for Javascript-->
+</head>
+
+<header>
+    <div class="header">
+       <h1>Items in my Shopping bag</h1>
+       <button><a href="index.html">Home</a></button> <!--Button for going back to home page-->
+    </div>
+</header>
+
+<body>
+    <main>
+        <!--Displays items in Cart-->
+        <section class="cart-section">
+            <button id="empty-cart" class="empty-cart">Remove Items</button>
+            <br>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total">0</span> PKR</h3> <!--Total calculated amount-->
+            </div>
+            <!--Selection of Payment methods and checkout-->
+            <div class="checkout-section">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" class="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="cash-on-delivery">Cash on Delivery</option>
+                    <option value="no money">I want for free</option>
+                </select>
+                <br>
+                <button id="checkout" class="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
