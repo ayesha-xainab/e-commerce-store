@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Heder Styles */
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -77,7 +77,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Products Sections Style */
+/* Products Section's Style */
 .product-section {
     padding: 20px;
     background-color: rgba(225, 224, 224, 0.788);
